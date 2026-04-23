@@ -1,7 +1,7 @@
 let r;
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(400, 400);
   frameRate(60);
   r = 0;
 }

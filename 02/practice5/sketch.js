@@ -3,7 +3,7 @@ let y;
 
 function setup() {
   background(0);
-  createCanvas(500, 500);
+  createCanvas(400, 400);
   frameRate(1);
 }
 

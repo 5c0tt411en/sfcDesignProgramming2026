@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(400, 400);
   let x = 100;
 
   x = x + 1;
