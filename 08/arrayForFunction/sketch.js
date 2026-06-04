@@ -1,18 +1,18 @@
 let el = 200;
-let n = new Array(el).fill(0);
-let x = new Array(el).fill(0);
-let y = new Array(el).fill(0);
-let sp = new Array(el).fill(0);
+let n = [];
+let x = [];
+let y = [];
+let sp = [];
 let c = [];
 
 function setup() {
   createCanvas(1200, 800);
-  for (let i = 0; i < x.length; i++) {
-    n[i] = int(random(10, 20));
-    x[i] = int(random(width));
-    y[i] = int(random(height));
-    sp[i] = random(4.0);
-    c[i] = color(random(100, 120), random(120, 200), random(200, 220));
+  for (let i = 0; i < el; i++) {
+    n.push(int(random(10, 20)));
+    x.push(int(random(width)));
+    y.push(int(random(height)));
+    sp.push(random(4.0));
+    c.push(color(random(100, 120), random(120, 200), random(200, 220)));
   }
 }
 

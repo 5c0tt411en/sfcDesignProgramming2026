@@ -1,22 +1,22 @@
 let n = 10;
-let x = new Array(10).fill(0);
-let y = new Array(10).fill(0);
-let d = new Array(10).fill(0);
-let vx = new Array(10).fill(0);
-let vy = new Array(10).fill(0);
+let x = [];
+let y = [];
+let d = [];
+let vx = [];
+let vy = [];
 let c = [];
 
 function setup() {
   createCanvas(700, 700);
-  for (let i = 0; i < x.length; i++) {
-    d[i] = int(random(2, 20));
-    x[i] = int(random(d[i] / 2, width - d[i] / 2));
-    y[i] = int(random(d[i] / 2, height - d[i] / 2));
-    while (vx[i] === 0)
-      vx[i] = int(random(-5, 5));
-    while (vy[i] === 0)
-      vy[i] = int(random(-5, 5));
-    c[i] = color(random(100, 140), random(150, 220), random(150, 250));
+  for (let i = 0; i < n; i++) {
+    d.push(random(2, 20));
+    x.push(random(d[i] / 2, width - d[i] / 2));
+    y.push(random(d[i] / 2, height - d[i] / 2));
+    vx.push(random(-5, 5));
+    while (vx[i] == 0) vx[i] = random(-5, 5);
+    vy.push(random(-5, 5));
+    while (vy[i] == 0) vy[i] = random(-5, 5);
+    c.push(color(random(100, 140), random(150, 220), random(150, 250)));
   }
 }
 

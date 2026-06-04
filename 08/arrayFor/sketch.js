@@ -1,11 +1,11 @@
-let x = new Array(100).fill(0);
-let y = new Array(100).fill(0);
+let x = [];
+let y = [];
 
 function setup() {
   createCanvas(600, 400);
-  for (let i = 0; i < x.length; i++) {
-    x[i] = int(random(width));
-    y[i] = int(random(height));
+  for (let i = 0; i < 100; i++) {
+    x.push(int(random(width)));
+    y.push(int(random(height)));
   }
 }
 
