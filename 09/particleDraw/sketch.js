@@ -15,12 +15,6 @@ function draw() {
 }
 
 class Particle {
-  constructor() {
-    this.x = 0;
-    this.y = 0;
-    this.d = 0;
-  }
-
   display() {
     ellipse(this.x, this.y, this.d, this.d);
   }
